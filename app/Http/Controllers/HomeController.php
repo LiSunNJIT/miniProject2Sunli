@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use APP\User;
+
 
 class HomeController extends Controller
 {
@@ -29,7 +32,14 @@ class HomeController extends Controller
 
     public function about()
     {
-        return view('about');
+
+        $users = User::all();
+
+
+
+
+
+        return view('about', ['users'=> $users]);
     }
 
     public function contact()
