@@ -17,12 +17,18 @@ class InsertUserTest extends TestCase
     public function testExample()
     {
         {
-            $user = new user;
-            $user-> name = 'SunLi';
-            $user-> email = 'ls447@njit.edu';
-            $user-> password = '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi';
+            $users = User::all();
 
-            $this->assertTrue(true);
+            User::where('id')->insert([
+
+                'name' =>'SunLi',
+                'email' =>'ls447@njit.edu',
+                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+
+            ]);
+
         }
+        $this->assertTrue(true);
+
     }
 }
