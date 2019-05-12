@@ -19,8 +19,7 @@ class UpdateUserTest extends TestCase
         $this->assertTrue(true);
 
         {
-            $user = new user;
-
+            $user = User::find(1);
             $user-> name='Steve Smith';
             $user-> email='stevesmith888@njit.edu';
             $user-> password = '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi';
