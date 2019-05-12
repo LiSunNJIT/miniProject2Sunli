@@ -84,6 +84,8 @@
                     Laravel
                 </div>
 
+                <h1>This is My Miniproject 2, My WelcomePage</h1>
+
                 <div class="links">
                     <a href={{route('contact')}}>Contact</a>
                     <a href={{route('about')}}>About</a>
