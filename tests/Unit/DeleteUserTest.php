@@ -16,12 +16,16 @@ class DeleteUserTest extends TestCase
      */
     public function testExample()
     {
+        User::where('id',1) -> delete();
 
-        $user = User::find(1);
 
-        $user-> delete();
 
-        $users = User::all();
+
+        //$user = User::find(1);
+
+        //$user-> delete();
+
+        //$users = User::all();
 
         $this->assertTrue(true);
     }
