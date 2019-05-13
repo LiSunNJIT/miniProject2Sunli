@@ -17,10 +17,10 @@ class CountUserTest extends TestCase
      */
     public function testExample()
     {
-        $result = User::where('id','<',100) -> count();
+        $userCount = User::where('id','<',100) -> count();
 
         $this->assertTrue(true);
 
-        return ($result);
+        return ($userCount);
     }
 }
