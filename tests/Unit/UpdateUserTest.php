@@ -16,18 +16,20 @@ class UpdateUserTest extends TestCase
      */
     public function testExample()
     {
-        $this->assertTrue(true);
 
         {
             $users = User::all();
 
-            $user = User::find(51);
-            $user-> name ='Steve Smith';
-            $user-> email = 'stevesmith888@njit.edu';
-            $user-> password = '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi';
+            User::where('id',2)->update([
+
+                'name' =>'Steve Smith',
+                'email' =>'stevesmith888@njit.edu',
+                'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi',
+
+            ]);
 
         }
-
+        $this->assertTrue(true);
 
     }
 }
