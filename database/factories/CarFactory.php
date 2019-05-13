@@ -1,8 +1,10 @@
 <?php
 
+use App\Cars;
+use Illuminate\Support\Str;
 use Faker\Generator as Faker;
 
-    $factory->define(App\Car::class, function (Faker $faker) {
+    $factory->define(App\Cars::class, function (Faker $faker) {
 
     return [
 
